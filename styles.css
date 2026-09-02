@@ -40,10 +40,12 @@ img {
 }
 
 button {
-    padding: 3px 20px;
+    padding: 5px 30px;
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
 }
 
 button.white-border {
@@ -84,7 +86,7 @@ header > p {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 
 .banner > .left {
@@ -96,7 +98,6 @@ header > p {
 .banner > .right {
     width: 440px;
     height: 200px;
-
     flex: 0 0 440px;
 }
 
@@ -156,29 +157,46 @@ header > p {
     border: 3px solid #3882F6;
 }
 
-.bottom > .message {
-    background-color: #3882F6;
-    color: white;
-    border-radius: 5px;
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 200px;
+    background-color: #E5E7EB;
 }
 
-
-
-
-
-
 .quote > .message {
-    
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
     font-style: italic;
+}
+
+.quote > .signature {
+    align-self: flex-end;
+    font-weight: bolder;
+}
+
+.bottom {
+    padding: 50px 100px;
+    margin: 100px 200px;
+
+    background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 
 }
 
-.quote {
-    background-color: #E5E7EB;
+.bottom-left > .title {
+    font-size: 24px;
+    font-weight: bold;
 }
+
+
 
 footer {
   color: lightgrey;
@@ -187,13 +205,5 @@ footer {
   display: flex;
   justify-content: center;
   padding: 30px 0px;
-  
 }
 
-
-
-
-.bottom > .message {
-    padding: 5px;
-    margin: 20px;
-}
